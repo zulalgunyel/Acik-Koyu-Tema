@@ -1,0 +1,82 @@
+:root{
+    /* Açık Tema İçin */
+    --clr-bcg: #F6F0F0;
+    /* --clr-font: #F2E2B1; */
+    --clr-font: #854836; 
+    --clr-primary: #D5C7A3;
+    --clr-grey: #BDB395;
+}
+.dark-theme{
+    /* Koyu Tema */
+    --clr-bcg: #09122C;
+    --clr-font: #872341;
+    --clr-primary: #BE3144;
+    --clr-grey: #E17564;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--clr-bcg);
+    color: var(--clr-font);
+    line-height: 1.5;; 
+/* Satırlar arasındaki boşluk, yazı boyutunun 1.5 katı olacak şekilde ayarlanır */
+    font-size: 14px;
+    transition: 300ms all linear;
+}
+.nav-center{
+    width: 90vw;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0px;
+}
+.nav-center span{
+    font-size: 40px;
+    text-transform: 40px;
+    letter-spacing: 2px;
+    /* harfler arasındaki boşluk */
+}
+.btn{
+    background-color: var(--clr-primary);
+    color: var(--clr-bcg);
+    padding: 4px 8px;
+    border-radius: 5px;
+    border-color: transparent;
+    text-transform: uppercase;
+    transition: 300ms all linear;
+    font-weight: bold;
+    /* yazı tipinin kalınlığını vurgulamak için */
+    letter-spacing: 2px;
+    cursor: pointer;
+    /* üstüne geldiğinde iyi bi görüntü oluşması için */
+    
+}
+.articles{
+    padding: 80px 0px;
+    width: 90vw;
+    max-width: 600px;
+    margin: 0 auto;
+    /* ortalama  */
+}
+.post{
+    margin-bottom: 48px;
+}
+.post h2{
+    color: var(--clr-primary);
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 28px;
+}
+.post-info{
+    font-style: italic;
+    margin-bottom: 12px;
+    color: var(--clr-grey);
+}
+.post-info span{
+    margin-right: 8px;
+}
